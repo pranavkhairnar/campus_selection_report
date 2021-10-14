@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tp.js"></script>
+</head>
+<body>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th></th>
+                <th>2017-18</th>
+                <th>2018-19</th>
+                <th>2019-20</th>
+                <th>2020-21</th>
+
+            </tr>
+        </thead>
+        <script>
+            for (var i in companies)
+            {
+                document.write(
+                    '<tr><td rowspan="2" >' + companies[i].Name + 
+                    '</td> <td >CTC</td> <td >' + 
+                    companies[i].Salary1718 + '</td><td >' +
+                    companies[i].Salary1819 + '</td><td >' +
+                    companies[i].Salary1920 + '</td><td >' +
+                    companies[i].Salary2021 + '</td></tr><tr> <td>Students placed</td><td>' +
+                    companies[i].N1718 + '</td><td>' +
+                    companies[i].N1819 + '</td><td>' +
+                    companies[i].N1920 + '</td><td>' +
+                    companies[i].N2021 + '</td></tr>'               
+                )
+            }
+        </script>
+    </table>
+</body>
+</html>
